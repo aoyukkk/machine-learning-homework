@@ -1,0 +1,16 @@
+﻿model_store/
+**/model_store/
+**/*.pt
+**/*.gz
+**/*.bin
+**/__pycache__/
+**/report*
+*.pt
+*.log
+*.aux
+*.fls
+*.fdb_latexmk
+*.xdv
+*.tex
+*.pdf
+*.tar.gz

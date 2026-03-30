@@ -1,0 +1,4 @@
+model,fid,train_time_min,params_m
+diffusion,39.9729,59.559,65.857
+flow_matching,44.3443,58.247,65.857
+autoregressive,229.7311,15.263,16.641

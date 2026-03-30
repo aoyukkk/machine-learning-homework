@@ -1,0 +1,3 @@
+metric,value
+reconstruction_mse,0.009975788183510303
+fid_proxy,71.28377657417386

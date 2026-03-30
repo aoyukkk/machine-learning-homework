@@ -1,0 +1,63 @@
+{
+  "profile": "multi_gpu_8x24g",
+  "distributed": true,
+  "world_size": 8,
+  "device": "cuda:0",
+  "gpus_requested": null,
+  "config": {
+    "seed": 42,
+    "image_size": 32,
+    "num_classes": 10,
+    "batch_size": 64,
+    "grad_accum_steps": 1,
+    "num_workers": 8,
+    "log_interval_steps": 50,
+    "epochs_diffusion": 200,
+    "epochs_flow": 200,
+    "epochs_autoregressive": 80,
+    "lr": 0.0005,
+    "weight_decay": 0.0001,
+    "ema_decay": 0.999,
+    "amp": true,
+    "diffusion_steps": 500,
+    "diffusion_sample_steps": 500,
+    "flow_sample_steps": 400,
+    "fid_num_gen": 10000,
+    "fid_batch_size": 128,
+    "ar_num_bins": 16,
+    "ar_refine_steps": 30,
+    "ar_channels": 256,
+    "ar_depth": 14,
+    "unet_base": 192,
+    "use_data_parallel": true,
+    "max_train_samples": null,
+    "max_test_samples": null,
+    "vis_per_model": 36,
+    "vis_target_labels": [
+      3,
+      5,
+      1
+    ]
+  },
+  "metrics": [
+    {
+      "model": "diffusion",
+      "fid": 39.9729,
+      "train_time_min": 59.559,
+      "params_m": 65.857
+    },
+    {
+      "model": "flow_matching",
+      "fid": 44.3443,
+      "train_time_min": 58.247,
+      "params_m": 65.857
+    },
+    {
+      "model": "autoregressive",
+      "fid": 229.7311,
+      "train_time_min": 15.263,
+      "params_m": 16.641
+    }
+  ],
+  "quick_test": false
+}

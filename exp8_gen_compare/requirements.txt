@@ -1,0 +1,8 @@
+# 实验八：生成模型对比 — 依赖列表
+torch>=2.0
+torchvision>=0.15
+numpy
+scipy
+matplotlib
+tqdm
+Pillow
